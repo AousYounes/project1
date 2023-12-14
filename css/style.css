@@ -1,0 +1,1013 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 3000px;
+    background-color: rgba(208, 194, 194, 0.756);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header{
+    width: 100%;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+}
+.divfirst{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/restaurant-.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.content{
+    width: 60%;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.title1{
+    color: #fff;
+    font-size: 55px;
+}
+.p11{
+    color: #f1ecec;
+    letter-spacing: 2px;
+}
+.btn{
+    padding: 16px;
+    border-radius: 6px;
+    border: none;
+    font-size: 18px;
+    margin-right: 15px;
+
+}
+.btn2{
+    background-color: rgb(17, 192, 137);
+    color: #fff;
+}
+.btn:hover{
+    opacity: 0.5;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+    z-index: 1;
+}
+.team-content{
+     margin: 100px 0px;
+}
+.team-item{
+    float: left;
+    background-color: rgb(186, 181, 181);
+    width: 30%;
+    padding: 14px 18px;
+    text-align: center;
+    position: relative;
+}
+.team-image{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.team-image img{
+    width: 100%; 
+}
+.team-overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+.team-item:hover .team-overlay{
+    opacity: 0.7;
+    visibility: visible;
+    
+}
+.team-overlay a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(17, 192, 137);
+    color: #fff;
+    font-size: 20px;
+    margin-left: auto;
+}
+.team-overlay a i{
+    line-height: 40px;
+}
+.team-item::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    transition: 2s;
+}
+.team-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.team-info-title{
+    padding: 12px 0px;
+}
+.team-item:hover .team-info-title{
+    color: #fff;
+}
+.team-item:hover .team-info-span{
+    color: rgb(17, 192, 137);
+}
+.zz{
+    margin: 0px 5%;
+}
+.parent{
+    height: 1000px;
+    overflow: auto;
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+}
+.div1{
+    width: 300px;
+    height: 400px;
+    background-color:  #e9dddd;
+    border: 3px solid rgb(148, 144, 144);
+    border-radius: 10px;
+    text-align: center;
+    float: left;
+    margin-left: 150px;
+    margin-top: 105px;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 2;
+}
+.overlay-div1{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+.dd3:hover .overlay-div1{
+    opacity: 0.7;
+    visibility: visible;
+    
+}
+.dd3::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+    transition: 1s;
+}
+.dd3:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.dd3:hover .xx{
+    color:  rgb(17, 192, 137);
+}
+
+.div2{
+    width: 300px;
+    height: 400px;
+    background-color: #e9dddd;
+    border: 3px solid rgb(148, 144, 144);
+    border-radius: 10px;
+    text-align: center;
+    float: left;
+    margin-left: 150px;
+    margin-top: 105px;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 2;
+}
+.div3{
+    width: 300px;
+    height: 400px;
+    background-color:  #e9dddd;
+    border: 3px solid rgb(148, 144, 144);
+    border-radius: 10px;
+    text-align: center;
+    float: left;
+    margin-left: 150px;
+    margin-top: 105px;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 2;
+}
+.d1{
+    width: 150px;
+    height: 150px;
+    border: 3px solid rgb(15, 240, 169);
+    margin: auto;
+    border-radius: 50% 50%;
+    background-color: #fff;
+}
+.p1{
+    font-size: 66px;
+    font-weight: bolder;
+    line-height: 10px;
+    margin-top: 50px;
+}
+.p2{
+    font-size: 22px;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+p{
+    margin: 20px 0px;
+    color: rgb(114, 111, 111);
+
+}
+.t1{
+    text-align: center;
+    margin:10px 0px;
+    z-index: 2;
+}
+.d233{
+    width: 15%;
+    height: 5px;
+    margin: auto;
+    background-color: rgb(15, 240, 169);
+
+}
+.p233{
+    display: block;
+    margin:auto;
+    width: 60px;
+    height: 4px;
+    background-color: rgb(15, 240, 169);
+}
+.b1{
+    padding: 15px;
+    margin: 0px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 3px solid rgb(15, 240, 169);
+}
+.title{
+    text-align: center;
+    margin-top: 150px;
+    font-size: 45px;
+    z-index: 2;
+}
+.logo{
+    width: 200px;
+    height: 55px;
+    margin-left: 100px;
+    float: left;
+}
+.list{
+    list-style-type: none;
+    float: right;
+    margin-right: 200px;
+}
+.list li{
+    display: inline-block;
+    margin-left: 25px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.list li a{
+    text-decoration: none;
+    color: #fff;
+}
+.list li a:hover{
+    color: rgb(15, 240, 169);
+}
+.picture1{
+    position: relative;
+    background-image: url(../image/Ar1782020-1.jpg);
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.pic-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.pic-container{
+    width: 80%;
+    margin: auto;
+}
+.pic-icons{
+    overflow: hidden;
+    padding-top: 130px;
+}
+.vv{
+    width: 25%;
+    text-align: center;
+    float: left;
+}
+.vv .vv1{
+    color:rgb(15, 240, 169) ;
+    font-size: 48px;
+}
+.vv h3{
+    color: #fff;
+    font-size: 24px;
+}
+.vv span{
+    color: #fff;
+    font-size: 16px;
+}
+.welcome{
+    text-align: center;
+    z-index: 1;
+}
+.welcome .welcome-title{
+    font-size: 30px;
+    margin-bottom: 9px;
+    margin-top: 70px;
+}
+.welcome-container{
+    width: 80%;
+    margin: auto;
+    
+    z-index: 2;
+}
+.welcome-content{
+    text-align: center;
+    height: 350px;
+    overflow: hidden;
+    margin-top: 100px;
+    margin-bottom:0px;
+    position: relative;
+    
+    z-index: 2;
+    
+   
+}
+.welcome-content .wl{
+    width: 30%;
+    text-align: center;
+    float: left;
+    padding: 30px 15px;
+    border: 1px solid rgb(148, 144, 144) ;
+    margin:0px 15px;
+    
+    
+    
+}
+.ic1{
+    color: rgb(15, 240, 169);
+    margin-bottom: 10px;
+}
+.welcome-items-title{
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+.welcome-items-p1{
+    color: #444444;
+    letter-spacing: 2px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.welcome-items-a1{
+    text-decoration: none;
+    color:  rgb(15, 240, 169);
+    font-size: 16px;
+}
+.welcome-items{
+    margin: 0px 5%;
+    position: relative;
+}
+.welcome-overlay::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1s;
+}
+.welcome-overlay:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    
+}
+.wl{
+    position: relative;
+}
+.wl:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top:0;
+    left:0;
+    background-color: #333; 
+}
+.wl:hover:after{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: -1;
+}
+.wl:hover .welcome-items-title{
+    color: #fff;
+}
+.wl:hover .welcome-items-p1{
+    color:#e9dddd;
+}
+.food-header{
+    margin-top: 0px;
+    margin-bottom: 70px;
+}
+.food-header .food-title{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 9px;
+    margin-top: 6px;
+}
+.food .food-container{
+    width: 80%;
+    margin: auto;
+}
+.food-content{
+    overflow: hidden;
+}
+.food-item{
+    width: 30%;
+    float: left;
+    margin-bottom: 20px;
+    padding: 30px;
+    margin-left: 30px;
+    position: relative;
+}
+.food-item img{
+    width: 100%;
+}
+.food-item .food-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+.food-overlay .food-overlay-title{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 80%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+.food-overlay .food-info{
+    color:  rgb(15, 240, 169);
+    display: block;
+    position: relative;
+    margin-bottom: 5px;
+    top: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+.food-title3{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+    top: 15px;
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+.food-overlay-title a{
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: 15px;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+.food-overlay-title a i{
+    line-height: 40px;
+}
+.food-item ff{
+    margin: 0 5%;
+}
+.food-item ff img{
+    
+    background-size: cover;
+}
+.food-content {
+    overflow: hidden;
+    width: 100%;
+}
+.food-item{
+    width: 30%;
+    float: left;
+    margin-bottom: 20px;
+    position: relative;
+    padding:20px;
+}
+.food-item img{
+    width: 100%;
+}
+.food-item.mg {
+    margin: 0 5%;
+}
+.food-item .food-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    width:100%;
+    height:100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition:opacity 1s;
+}
+.food-item:hover .food-overlay{
+    opacity:1;
+    visibility: visible;
+}
+ .food-overlay .food-overlay-title{
+    position: absolute;
+    left:50%;
+    top:50%;
+    width: 80%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
+.food-overlay .food-info {
+    color: rgb(15, 240, 169);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 5px;
+    position: relative;
+    top: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 1s ,opacity .5s;
+    transition-delay: 0;
+}
+.food-title3{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+    position: relative;
+    top: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 1s ,opacity 0.5s;
+    transition-delay: 0.4s;
+}
+.food-overlay a  {
+    display: inline-block;
+    width:40px;
+    height: 40px;
+    background-color:  rgb(15, 240, 169);
+    position: relative;
+    top:15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 1s ,opacity .5s;
+    transition-delay: 0.6s;
+}
+.food-item:hover .food-title3,
+.food-item:hover .food-overlay a,
+.food-item:hover .food-overlay .food-info{
+   top:0;
+   opacity: 1;
+   visibility: visible;
+}
+.food-overlay a i{
+    line-height: 40px;
+}
+.service .food-title{
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 9px;
+    margin-top: 70px;
+    
+}
+.service .service-container{
+    width: 80%;
+    margin-top:100px;
+    margin-left: 150px;
+
+}
+.service-content {
+    overflow: hidden;
+}
+.service-item{
+    width:30%;
+    float: left;
+    margin-bottom: 20px;
+    border: 1px solid #a8a8a8 ;
+    padding: 30px 15px 30px 70px;
+    position: relative;
+}
+.service-item.sv{
+    margin: 0%  5%;
+}
+.service-item .ic{
+    position: absolute;
+    left:20px;
+    top:26px;
+    color:rgb(15, 240, 169);
+    font-size: 24px;
+}
+.service-item-title {
+    margin-bottom: 15px;
+    transition: 1s;
+}
+.servicr-item-para {
+ text-transform: capitalize;
+ margin-bottom: 15px;
+ line-height: 1.6;
+ color: #999;
+ }
+ .service-item.jj:hover .service-item-title{
+     color: #fff;
+ }
+ .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7)
+}
+.hover-opacity{
+    transition:opacity 0.5;
+}
+.hover-opacity:hover{
+    opacity: 0.7;
+}
+.jj{
+    position: relative;
+}
+.jj:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top:0;
+    left:0;
+    background-color: #333; 
+}
+.jj:hover:after{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: -1;
+}
+.choose{
+    background-color: #efe9e9;
+    margin-top: 400px;
+    margin-bottom: 0px;
+    padding: 120px 0px;
+    width: 100%;
+    height: 600px;
+    
+}
+.choose-container{
+    width: 80%;
+    margin: auto;
+   
+    
+}
+.choose-item{
+    width: 50%;
+    height: 400px;
+    float: left;
+    
+}
+.choose-item .choose-title{
+    text-align: left;
+}
+.choose-title .choose-title1{
+    font-size: 35px;
+    margin-bottom: 9px;
+    margin-top: 6px;
+}
+.cho{
+display: block;
+width: 62px;
+height: 4px;
+float: left;
+margin: 0px;
+
+background-color: rgb(15, 240, 169) ;
+}
+
+.choose-title .choose-title1 span{
+    margin: 0px 0px 45px 0px;
+    float:left;
+}
+
+.choose-item-para{
+    padding-right: 20px;
+    color: #333;
+    line-height: 1.4;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.choose-list{
+    list-style: none;
+}
+.choose-list li{
+    margin-bottom: 13px;
+    color: #7c7a7a;
+}
+.choose-list li i{
+    color: rgb(15, 240, 169);
+    padding: 3px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+}
+.resturant-choose{
+    width: 100%;
+    height:400px;
+}
+.choose-item-spinner{
+    list-style: none;
+    text-align: center;
+}
+.choose-item-spinner li.active{
+    background-color: rgb(15, 240, 169);
+}
+.choose-item-spinner li{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 10px 5px;
+    background-color: #999;
+}
+.choose-item-spinner li:hover{
+    background-color: rgb(15, 240, 169); 
+}
+.picture2{
+    position: relative;
+    background-image: url(../image/resturant2.jpg);
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.pic-overlay2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.pic-container2{
+    width: 80%;
+    margin: auto;
+    
+}
+.pic-content2 {
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    
+}
+.pic-content2-item{
+    width: 50%;
+    color: #fff;
+    padding-right: 20px;
+    padding-top: 55px;
+    margin-bottom: 110px;
+    float: left;
+    
+    
+}
+.pic-content2-item-title{
+    padding: 90px 20px 10px 150px;
+    position: relative;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.pic-content2-item-title .pic-content-item{
+    position: absolute;
+    top:82px;
+    left: 65px;
+    border-radius: 50%;
+}
+.pic-content2-item-title .pic-icons-sp1{
+    color: rgb(15, 240, 169); 
+}
+.pic-content2-item-para{
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-left: 75px;
+    font-size: 15px;
+    color: #f1ecec;
+}
+.ll{
+    float: left;
+}
+.resent-container{
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+.resent-content{
+    overflow: hidden;
+    
+}
+.resent-item{
+    float: left;
+    width: 30%;
+    background-color: #dfdada;
+    position: relative;
+}
+.resent-item-img{
+    width: 100%;
+    margin-left: 23px;
+    float: left;
+}
+.resent-info{
+    padding: 20px;
+}
+.resent-list{
+    list-style: none;
+    margin: 10px 0px;
+}
+.resent-list li{
+    display: inline-block;
+    font-size: 12px;
+    margin: 0px 5px;
+}
+.resent-title{
+    font-weight: bold;
+    margin: 20px 0px;
+}
+.resent-title .title .d233{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.resent-paragraph-para{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #333;
+}
+.resent-link{
+    color: rgb(15, 240, 169); 
+}
+.resent-info a{
+    text-decoration: none;
+}
+.resent-item{
+    margin-left: 30px;
+}
+.resent-item:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+    transition: 1s;
+    opacity: 0;
+    background-color:rgba(0,0,0,0.5);
+}
+.resent-item:hover:after{
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+}
+.resent-list li i{
+    color: rgb(15, 240, 169); 
+}
+.footer{
+    background-color: #333;
+    text-align: center;
+    height: 400px;
+    padding: 60px 0px;
+}
+.footer-list{
+    list-style: none;
+    margin: 20px 0px;
+}
+.footer-list li{
+    display: inline-block;
+    background-color: rgb(15, 240, 169);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+.footer-list li a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    line-height: 50px;
+    padding-top: 15px;
+    padding-right: 15px;
+    font-size: 23px;
+    margin: 0px 8px;
+}
+.footer-list li a i{
+    color:#fff;
+    font-size: 23px;
+    
+}
+.footer-list li:after{
+    position: absolute;
+    content: "";
+    opacity: 0;
+    transition: 0.2s;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+}
+.footer-list li:hover:after{
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 50%;
+}
+.footer-list li a i:hover{
+    color: #fff;
+}
+.footer p{
+    color:#999;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
